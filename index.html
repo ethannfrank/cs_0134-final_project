@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriTracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>NutriTracker</h1>
+        <nav>
+            <ul>
+                <li class="field">
+                    <label for="login-user">Username:</label>
+                    <input type="text" id="login-user">
+                    <label for="login-pass">Password:</label>
+                    <input type="password" id="login-pass">
+                </li>
+                <li id="login-button"><a href="/login">Login</a></li>
+                <li class="field">
+                    <label for="signup-user">Username:</label>
+                    <input type="text" id="signup-user">
+                    <label for="signup-pass">Password:</label>
+                    <input type="password" id="signup-pass">
+                </li>
+                <li id="signup-button"><a href="/signup">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div id="goal-progress">
+                <div class="progress-bar-label">
+                    <p>Calories &nbsp;</p>
+                    <p>- &nbsp;</p>
+                    <p id="calories-num">0</p>
+                    <p>&nbsp;/&nbsp;</p>
+                    <p id="calories-goal">0</p>
+                    <p>&nbsp;kcal</p>
+                </div>
+                <div class="progress-bar">
+                    <div id="calories-progress" class="progress"></div>
+                </div>
+                <div class="progress-bar-label">
+                    <p>Protein &nbsp;</p>
+                    <p>- &nbsp;</p>
+                    <p id="protein-num">0.0</p>
+                    <p>&nbsp;/&nbsp;</p>
+                    <p id="protein-goal">0.0</p>
+                    <p>&nbsp;g</p>
+                </div>
+                <div class="progress-bar">
+                    <div id="protein-progress" class="progress"></div>
+                </div>
+                <div class="progress-bar-label">
+                    <p>Carbs &nbsp;</p>
+                    <p>- &nbsp;</p>
+                    <p id="carbs-num">0.0</p>
+                    <p>&nbsp;/&nbsp;</p>
+                    <p id="carbs-goal">0.0</p>
+                    <p>&nbsp;g</p>
+                </div>
+                <div class="progress-bar">
+                    <div id="carbs-progress" class="progress"></div>
+                </div>
+                <div class="progress-bar-label">
+                    <p>Fat &nbsp;</p>
+                    <p>- &nbsp;</p>
+                    <p id="fat-num">0.0</p>
+                    <p>&nbsp;/&nbsp;</p>
+                    <p id="fat-goal">0.0</p>
+                    <p>&nbsp;g</p>
+                </div>
+                <div class="progress-bar">
+                    <div id="fat-progress" class="progress"></div>
+                </div>
+            </div>
+        </section>
+        <div class="meal-logging-container">
+            <section id="meal-logging">
+                <h2>Meal Logging</h2>
+                <form id="meal-form">
+                    <div class="form-group">
+                        <label for="meal">Meal Name:</label>
+                        <input type="text" id="meal" name="meal" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="calories">Calories (kcal):</label>
+                        <input type="number" id="calories" name="calories" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="protein">Protein (g):</label>
+                        <input type="number" id="protein" name="protein" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="carbs">Carbs (g):</label>
+                        <input type="number" id="carbs" name="carbs" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fat">Fat (g):</label>
+                        <input type="number" id="fat" name="fat" required>
+                    </div>
+                    <button type="submit" id="log-meal">Log Meal</button>
+                </form>
+            </section>
+            <section id="meal-list">
+                <h2>Meals List</h2>
+                <ul id="meal-list-items">
+                    <!-- List of meals will be populated dynamically using JavaScript -->
+                </ul>
+            </section>
+        </div>
+        <section id="custom-goals">
+            <h2>Customizable Goals</h2>
+            <form id="goal-form">
+                <div class="form-group">
+                    <label for="goal-calories">Calories Goal (kcal):</label>
+                    <input type="number" id="goal-calories" name="goal-calories" required>
+                </div>
+                <div class="form-group">
+                    <label for="goal-protein">Protein Goal (g):</label>
+                    <input type="number" id="goal-protein" name="goal-protein" required>
+                </div>
+                <div class="form-group">
+                    <label for="goal-carbs">Carbs Goal (g):</label>
+                    <input type="number" id="goal-carbs" name="goal-carbs" required>
+                </div>
+                <div class="form-group">
+                    <label for="goal-fat">Fat Goal (g):</label>
+                    <input type="number" id="goal-fat" name="goal-fat" required>
+                </div>
+                <button type="submit" id="set-goals">Set Goals</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 NutriTracker. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

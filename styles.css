@@ -1,0 +1,134 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+.dashboard {
+  display: flex;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f0f0f0;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-bar-label {
+  display: flex;
+}
+
+.progress {
+  height: 20px;
+  background-color: #007bff;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.meal-logging-container {
+  display: flex;
+}
+
+#meal-logging,
+#meal-list {
+  flex: 1;
+  margin-right: 20px;
+}
+
+li {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+#meal-list-items {
+  display: flex;
+  list-style-type: none;
+}
+
+ul,
+ul .field {
+  display: flex;
+}
+
+.field input {
+  width: 100px;
+  height: 20px;
+  margin-right: 1rem;
+}
+
+#login-user,
+#signup-user {
+  height: 7px;
+}
+
+#login-button,
+#signup-button {
+  background-color: #0056b3;
+  padding: 0.5rem;
+}
